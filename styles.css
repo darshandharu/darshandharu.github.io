@@ -124,6 +124,28 @@ img { max-width: 100%; display: block; }
 }
 .project__links { display: flex; gap: 0.8rem; }
 
+/* ---------- Experience / Timeline ---------- */
+.timeline { position: relative; padding-left: 1.6rem; }
+.timeline::before {
+  content: ""; position: absolute; left: 5px; top: 6px; bottom: 6px;
+  width: 2px; background: var(--line);
+}
+.tl-item { position: relative; padding-bottom: 2rem; }
+.tl-item:last-child { padding-bottom: 0; }
+.tl-item::before {
+  content: ""; position: absolute; left: -1.6rem; top: 6px;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+.tl-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+.tl-head h3 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.3px; }
+.tl-co { color: var(--accent); font-weight: 600; }
+.tl-date { font-family: "JetBrains Mono", monospace; font-size: 0.82rem; color: var(--muted); white-space: nowrap; }
+.tl-loc { color: var(--muted); font-size: 0.85rem; margin-top: 0.1rem; }
+.tl-list { margin: 0.9rem 0 0; padding-left: 1.1rem; }
+.tl-list li { color: var(--muted); font-size: 0.96rem; margin-bottom: 0.5rem; }
+.tl-list strong { color: var(--text); }
+
 /* ---------- Contact ---------- */
 .section--contact { text-align: center; padding-bottom: 6rem; }
 .contact__text { color: var(--muted); max-width: 520px; margin: 0 auto 2rem; }

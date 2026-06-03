@@ -16,6 +16,7 @@
     <a href="#top" class="nav__brand">DBS<span>.</span></a>
     <nav class="nav__links">
       <a href="#about">About</a>
+      <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
@@ -71,9 +72,37 @@
     </div>
   </section>
 
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <h2 class="section__title"><span class="num">02.</span> Experience</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-head">
+          <h3>Data Engineer <span class="tl-co">· Accenture</span></h3>
+          <span class="tl-date">Dec 2022 – Sept 2025</span>
+        </div>
+        <p class="tl-loc">Bengaluru, India</p>
+        <ul class="tl-list">
+          <li>Designed and maintained SQL-based ETL pipelines in <strong>BigQuery</strong> for incremental, monthly, and full-history loads across healthcare and CRM analytics use cases.</li>
+          <li>Built and managed <strong>Apache Airflow</strong> DAGs on Cloud Composer to orchestrate multi-step workflows with scheduling, dependency handling, and error alerting.</li>
+          <li>Developed staging and curated tables with deduplication, cleansing, and audit-column logic to produce consistent, auditable datasets for reporting teams.</li>
+          <li>Optimised BigQuery SQL through partitioning, clustering, and query refactoring — improving performance and reducing scan costs on high-frequency jobs.</li>
+          <li>Delivered the <strong>Healthcare ETL pipeline for Independence Blue Cross (IBC)</strong>, including customer matching, deduplication, and governance-aligned validation logic.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-head">
+          <h3>B.E., Information Science <span class="tl-co">· CMR Institute of Technology</span></h3>
+          <span class="tl-date">2018 – 2022</span>
+        </div>
+        <p class="tl-loc">Bengaluru, India</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Skills -->
   <section class="section" id="skills">
-    <h2 class="section__title"><span class="num">02.</span> Skills &amp; Tools</h2>
+    <h2 class="section__title"><span class="num">03.</span> Skills &amp; Tools</h2>
     <div class="skills">
       <div class="skills__group">
         <h3>Languages</h3>
@@ -108,7 +137,7 @@
 
   <!-- Projects -->
   <section class="section" id="projects">
-    <h2 class="section__title"><span class="num">03.</span> Projects</h2>
+    <h2 class="section__title"><span class="num">04.</span> Projects</h2>
 
     <!-- Project 1 -->
     <article class="project">
@@ -116,14 +145,14 @@
         <img src="assets/dq_dashboard.png" alt="Data Quality Monitoring Dashboard" loading="lazy" />
       </div>
       <div class="project__body">
-        <p class="project__tag">Featured · Data Engineering</p>
-        <h3 class="project__title">Data Quality Monitoring Dashboard</h3>
+        <p class="project__tag">Featured · Data Quality &amp; Observability</p>
+        <h3 class="project__title">Enterprise Data Quality Monitoring &amp; Observability Platform</h3>
         <p class="project__desc">
-          An end-to-end automated data quality pipeline that catches bad data
-          <em>before</em> it reaches dashboards — the same pattern used at banks
-          and healthcare firms. Detects missing values, duplicates, schema errors,
-          and delayed loads, logs every issue to a MySQL audit table, sends HTML
-          email alerts, and surfaces 6 KPIs on a live Streamlit dashboard.
+          An end-to-end data quality monitoring platform with automated validation
+          checks, audit logging, email alerts, and KPI dashboards — built to simulate
+          enterprise-grade data observability. Implements missing-value, duplicate,
+          schema, email-format, and delayed-load monitoring; every issue is logged to
+          an audit table and surfaced across 6 KPIs on a live dashboard.
         </p>
         <ul class="project__stack">
           <li>Python</li><li>Pandas</li><li>MySQL</li><li>SQLAlchemy</li><li>Streamlit</li><li>Power BI</li><li>Airflow</li>
@@ -163,7 +192,7 @@
 
   <!-- Contact -->
   <section class="section section--contact" id="contact">
-    <h2 class="section__title"><span class="num">04.</span> Get In Touch</h2>
+    <h2 class="section__title"><span class="num">05.</span> Get In Touch</h2>
     <p class="contact__text">
       I'm open to data engineering, analytics engineering, and BI roles.
       The fastest way to reach me is email.
