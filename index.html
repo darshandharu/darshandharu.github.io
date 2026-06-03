@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darshan — Data Engineer</title>
+  <meta name="description" content="Darshan — Data Engineer & Analytics Engineer. Python, SQL, ETL pipelines, dashboards, and data quality." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Nav -->
+  <header class="nav">
+    <a href="#top" class="nav__brand">DD<span>.</span></a>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.pdf" class="nav__resume" download>Resume</a>
+    </nav>
+    <button class="nav__theme" id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">Hi, I'm Darshan 👋</p>
+      <h1 class="hero__title">
+        I build <span class="grad">reliable data pipelines</span><br />
+        and turn raw data into decisions.
+      </h1>
+      <p class="hero__sub">
+        Data Engineer specializing in Python, SQL, and ETL — I design automated
+        pipelines, enforce data quality, and ship the dashboards teams rely on to
+        make decisions.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="resume.pdf" class="btn btn--ghost" download>Download Resume</a>
+      </div>
+      <div class="hero__socials">
+        <a href="https://github.com/darshandharu" target="_blank" rel="noopener">GitHub</a>
+        <span>·</span>
+        <a href="mailto:darshandharu0@gmail.com">Email</a>
+        <span>·</span>
+        <a href="https://www.linkedin.com/in/darshanbs-data-engineer/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h2 class="section__title"><span class="num">01.</span> About</h2>
+    <div class="about">
+      <p>
+        I'm a <strong>Data Engineer</strong> who enjoys building the
+        unglamorous-but-critical plumbing that keeps data trustworthy — ingestion,
+        validation, automated quality checks, and orchestration. I like shipping
+        end-to-end: from a raw CSV or API call all the way to a live, scheduled
+        pipeline and an interactive dashboard.
+      </p>
+      <p>
+        Recently I've built two production-style projects — an automated
+        <strong>data quality monitoring system</strong> and a
+        <strong>real-time YouTube trend analyzer</strong> — both deployed live
+        with automated daily pipelines. Below is what I work with and what I've built.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <h2 class="section__title"><span class="num">02.</span> Skills &amp; Tools</h2>
+    <div class="skills">
+      <div class="skills__group">
+        <h3>Languages</h3>
+        <ul><li>Python</li><li>SQL</li><li>Bash</li></ul>
+      </div>
+      <div class="skills__group">
+        <h3>Data &amp; ETL</h3>
+        <ul><li>Pandas</li><li>SQLAlchemy</li><li>Great Expectations</li><li>Apache Airflow</li></ul>
+      </div>
+      <div class="skills__group">
+        <h3>Databases</h3>
+        <ul><li>MySQL</li><li>SQLite</li><li>BigQuery</li></ul>
+      </div>
+      <div class="skills__group">
+        <h3>Dashboards &amp; BI</h3>
+        <ul><li>Streamlit</li><li>Plotly</li><li>Power BI</li><li>Matplotlib</li></ul>
+      </div>
+      <div class="skills__group">
+        <h3>Automation &amp; Cloud</h3>
+        <ul><li>GitHub Actions</li><li>Docker</li><li>Task Scheduler / cron</li></ul>
+      </div>
+      <div class="skills__group">
+        <h3>Other</h3>
+        <ul><li>NLP (VADER)</li><li>REST APIs</li><li>Git</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <h2 class="section__title"><span class="num">03.</span> Projects</h2>
+
+    <!-- Project 1 -->
+    <article class="project">
+      <div class="project__media">
+        <img src="assets/dq_dashboard.png" alt="Data Quality Monitoring Dashboard" loading="lazy" />
+      </div>
+      <div class="project__body">
+        <p class="project__tag">Featured · Data Engineering</p>
+        <h3 class="project__title">Data Quality Monitoring Dashboard</h3>
+        <p class="project__desc">
+          An end-to-end automated data quality pipeline that catches bad data
+          <em>before</em> it reaches dashboards — the same pattern used at banks
+          and healthcare firms. Detects missing values, duplicates, schema errors,
+          and delayed loads, logs every issue to a MySQL audit table, sends HTML
+          email alerts, and surfaces 6 KPIs on a live Streamlit dashboard.
+        </p>
+        <ul class="project__stack">
+          <li>Python</li><li>Pandas</li><li>MySQL</li><li>SQLAlchemy</li><li>Streamlit</li><li>Power BI</li><li>Airflow</li>
+        </ul>
+        <div class="project__links">
+          <a href="https://darshandharu-data-quality-mon-scriptsdashboard-streamlit-vzqtyr.streamlit.app/" target="_blank" rel="noopener" class="btn btn--small">Live Demo ↗</a>
+          <a href="https://github.com/darshandharu/data-quality-monitoring-dashboard" target="_blank" rel="noopener" class="btn btn--small btn--ghost">Code ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project project--reverse">
+      <div class="project__media">
+        <img src="assets/yt_dashboard.png" alt="YouTube Trend Analyzer" loading="lazy" />
+      </div>
+      <div class="project__body">
+        <p class="project__tag">Featured · Data Pipeline + NLP</p>
+        <h3 class="project__title">YouTube Trend Analyzer</h3>
+        <p class="project__desc">
+          A self-updating data pipeline that fetches real-time trending videos
+          across the US, India, and UK via the YouTube Data API, runs VADER
+          sentiment analysis on every title, and stores it in SQLite. A live
+          Streamlit dashboard surfaces 5 KPIs and interactive charts — and
+          GitHub Actions refreshes the data automatically every day.
+        </p>
+        <ul class="project__stack">
+          <li>Python</li><li>YouTube API</li><li>VADER NLP</li><li>SQLite</li><li>Streamlit</li><li>Plotly</li><li>GitHub Actions</li>
+        </ul>
+        <div class="project__links">
+          <a href="https://darshandharu-youtube-trend-analyzer.streamlit.app/" target="_blank" rel="noopener" class="btn btn--small">Live Demo ↗</a>
+          <a href="https://github.com/darshandharu/youtube-trend-analyzer" target="_blank" rel="noopener" class="btn btn--small btn--ghost">Code ↗</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--contact" id="contact">
+    <h2 class="section__title"><span class="num">04.</span> Get In Touch</h2>
+    <p class="contact__text">
+      I'm open to data engineering, analytics engineering, and BI roles.
+      The fastest way to reach me is email.
+    </p>
+    <a href="mailto:darshandharu0@gmail.com" class="btn btn--primary">Say Hello</a>
+    <div class="hero__socials contact__socials">
+      <a href="https://github.com/darshandharu" target="_blank" rel="noopener">GitHub</a>
+      <span>·</span>
+      <a href="https://www.linkedin.com/in/darshanbs-data-engineer/" target="_blank" rel="noopener">LinkedIn</a>
+      <span>·</span>
+      <a href="resume.pdf" download>Resume</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Built with HTML, CSS &amp; a little JS · © <span id="year"></span> Darshan</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
